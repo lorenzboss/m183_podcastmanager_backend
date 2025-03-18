@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/podcastmanager
     username: postgres
-    password: windows
+    password: postgres
     driverClassName: org.postgresql.Driver
   security:
     oauth2:
