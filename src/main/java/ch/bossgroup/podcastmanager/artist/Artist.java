@@ -18,12 +18,12 @@ public class Artist {
     private Long id;
 
     @Column(nullable = false)
-    @Size(min = 2, max = 20)
+    @Size(min = 2, max = 30)
     @NotEmpty
     private String firstname;
 
     @Column(nullable = false)
-    @Size(min = 2, max = 20)
+    @Size(min = 2, max = 30)
     @NotEmpty
     private String lastname;
 

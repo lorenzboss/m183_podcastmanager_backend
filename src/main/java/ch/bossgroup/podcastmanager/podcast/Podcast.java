@@ -22,12 +22,12 @@ public class Podcast {
     private Long id;
 
     @Column(nullable = false)
-    @Size(min = 2, max = 100)
+    @Size(min = 2, max = 30)
     @NotEmpty
     private String title;
 
     @Column()
-    @Size(min = 5, max = 250)
+    @Size(max = 250)
     private String description;
 
     @ManyToMany

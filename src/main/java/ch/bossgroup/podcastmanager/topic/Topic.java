@@ -18,7 +18,7 @@ public class Topic {
     private Long id;
 
     @Column(nullable = false)
-    @Size(min = 3, max = 30)
+    @Size(min = 2, max = 30)
     @NotEmpty
     private String description;
 
