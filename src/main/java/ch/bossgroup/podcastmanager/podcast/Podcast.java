@@ -4,6 +4,7 @@ import ch.bossgroup.podcastmanager.artist.Artist;
 import ch.bossgroup.podcastmanager.topic.Topic;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class Podcast {
     @Column(nullable = false)
     @Size(min = 2, max = 30)
     @NotEmpty
+    @Pattern(regexp = "^[A-Za-z0-9$&\\-_,.!?]+$")
     private String title;
 
     @Column()
@@ -44,5 +46,6 @@ public class Podcast {
             joinColumns = @JoinColumn(name = "podcast_id"),
             inverseJoinColumns = @JoinColumn(name = "topic_id")
     )
+
     private List<Topic> topics;
 }
