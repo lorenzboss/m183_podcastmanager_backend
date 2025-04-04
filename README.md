@@ -1,6 +1,8 @@
 # Modul 183: Podcastmanager
 
-Dieses Projekt beinhaltet das **Frontend** und **Backend** für den Podcastmanager, der in den Modulen **295 (Backend)** und **294 (Frontend)** erstellt wird.  
+Link to the Frontend: https://github.com/lorenzboss/m183_podcastmanager_frontend
+
+Dieses Projekt beinhaltet das **Backend** für den Podcastmanager, der in den Modulen **295 (Backend)** und **294 (Frontend)** erstellt wird.
 Der Podcastmanager ist eine Webapplikation, welche es ermöglicht, Podcasts zu verwalten.
 
 ## Voraussetzungen
